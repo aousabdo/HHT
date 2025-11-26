@@ -1,0 +1,12 @@
+numpy
+pandas
+matplotlib
+scipy
+EMD-signal
+python-dotenv
+requests
+typer
+pytest
+pyarrow
+plotly
+scikit-learn
