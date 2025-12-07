@@ -1,0 +1,67 @@
+Loaded real pupil file: ../../analysis/data/raw/Files for Aous/hlt_012_d7_s1_t0_5hz_alpha_pupilMM_raw.csv
+Stimulus condition inferred from filename: 5Hz
+Estimated sampling rate: 118.680 Hz
+Post-stimulus duration: 9.016 s (n=895 samples)
+IMF  MeanFreq(Hz)  RelEnergy   Class
+  1      34.754       0.002   noise
+  2      16.687       0.001   noise
+  3       6.623       0.000   noise
+  4       1.438       0.011   physio
+  5       0.866       0.023   physio
+  6       0.233       0.963   physio
+  7       0.014       0.998   baseline
+
+Band powers
+-----------
+VLF          :  24.390870
+LF           :   0.000000
+MF           :   0.036627
+HF           :   0.001297
+
+Band ratios
+-----------
+LF_HF        :   0.000000
+MF_HF        :  28.233914
+VLF_LF       :        nan
+LFplusMF_HF  :  28.233914
+
+
+############ AROUSAL TRIAL SIMULATION ############
+
+=== One-way ANOVA: low vs high arousal per feature ===
+VLF_power     F =   0.781, p =  3.796e-01
+LF_power      F =   3.085, p =  8.293e-02
+MF_power      F =   2.726, p =  1.027e-01
+HF_power      F =  72.622, p =  9.147e-13
+LF_HF         F =   0.106, p =  7.452e-01
+MF_HF         F =  24.682, p =  3.906e-06
+VLF_LF        F =   0.508, p =  4.782e-01
+LFplusMF_HF   F =  24.859, p =  3.643e-06
+
+=== IMF-Level Arousal Effects (ANOVA + Effect Sizes + FDR) ===
+IMF           F             p        q(FDR)         d      Mean Low     Mean High
+1      6352.825     1.684e-76     2.021e-75   -17.822       20.7932       35.0276
+2      1273.991     4.475e-50     2.685e-49    -7.981        7.7050       12.6827
+3       584.439     5.597e-38     2.239e-37    -5.406        4.2038        6.8715
+4       358.762     6.580e-31     1.974e-30    -4.235        2.3309        3.8493
+5        30.485     4.261e-07     8.522e-07    -1.235        1.4832        2.3922
+6        72.622     9.147e-13     2.195e-12    -1.906       25.9439       43.1869
+7         1.885     1.737e-01     2.084e-01    -0.307      138.2927      146.3444
+8         0.881     3.508e-01     3.508e-01    -0.210       40.1422       45.4753
+9         2.531     1.157e-01     1.543e-01     0.356       29.7993       24.0354
+10       15.220     2.016e-04     3.023e-04     0.872    56201.7938    14103.7456
+11       17.196     8.506e-05     1.458e-04    -0.927    53489.1702    98238.8153
+12        1.000     3.204e-01     3.495e-01     0.224     2847.3076        0.0000
+
+=== Logistic regression arousal classifier ===
+Test accuracy: 0.917
+
+Feature coefficients (positive => higher in high arousal):
+MF_power    :  1.647
+HF_power    :  1.286
+MF_HF       : -0.667
+LFplusMF_HF : -0.639
+LF_power    :  0.535
+VLF_LF      :  0.514
+VLF_power   : -0.093
+LF_HF       :  0.072

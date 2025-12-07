@@ -10,3 +10,8 @@ pytest
 pyarrow
 plotly
 scikit-learn
+dash
+markdown 
+weasyprint
+pillow
+fpdf

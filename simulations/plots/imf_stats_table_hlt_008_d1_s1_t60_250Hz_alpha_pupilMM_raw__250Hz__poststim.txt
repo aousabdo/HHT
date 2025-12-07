@@ -1,0 +1,7 @@
+IMF  MeanFreq(Hz)  RelEnergy   Class
+  1      31.496       0.030   noise
+  2      15.036       0.010   noise
+  3       5.403       0.006   noise
+  4       1.041       0.072   physio
+  5       0.234       0.882   physio
+  6       0.006       0.998   baseline
